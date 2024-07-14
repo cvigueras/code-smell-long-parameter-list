@@ -8,7 +8,7 @@
 
         public int DoOperation(int givenNUmber1, int givenNumber2)
         {
-            throw new NotImplementedException();
+            return givenNUmber1 + givenNumber2;
         }
     }
 }
