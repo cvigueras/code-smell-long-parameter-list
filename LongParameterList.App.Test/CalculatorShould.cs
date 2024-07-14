@@ -38,7 +38,7 @@ namespace LongParameterList.App.Test
             var givenNumber2 = 20;
             var calculator = new Calculator();
 
-            var result = calculator.DoOperation(false, false, true, givenNUmber1, givenNumber2);
+            var result = calculator.Multiply(givenNUmber1, givenNumber2);
 
             Assert.IsTrue(result == givenNUmber1 * givenNumber2);
         }
