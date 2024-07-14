@@ -76,5 +76,15 @@ namespace LongParameterList.App.Test
 
             Assert.IsTrue(result == 0);
         }
+
+        [Test]
+        public void GetZeroWhenBothNumbersParameterAreNull()
+        {
+            var calculator = new Calculator();
+
+            var result = calculator.DoOperation(false, false, false);
+
+            Assert.IsTrue(result == 0);
+        }
     }
 }
