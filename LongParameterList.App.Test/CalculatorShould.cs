@@ -50,7 +50,7 @@ namespace LongParameterList.App.Test
             var givenNumber2 = 25;
             var calculator = new Calculator();
 
-            var result = calculator.DoOperation(false, false, false, givenNUmber1, givenNumber2);
+            var result = calculator.Split(givenNUmber1, givenNumber2);
 
             Assert.IsTrue(result == givenNUmber1 / givenNumber2);
         }

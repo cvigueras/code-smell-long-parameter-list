@@ -19,6 +19,11 @@ namespace LongParameterList.App
             return number1.Value * number2.Value;
         }
 
+        public int? Split(int? number1, int? number2)
+        {
+            return number1.Value / number2.Value;
+        }
+
         public int? DoOperation(bool suma, bool resta, bool multiplica, int? givenNUmber1 = null, int? givenNumber2 = null)
         {
             if(givenNUmber1 == null || givenNumber2 == null)
