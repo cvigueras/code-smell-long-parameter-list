@@ -1,6 +1,6 @@
-﻿namespace LongParameterList.App.Test
+﻿namespace LongParameterList.App
 {
-    internal class Calculator
+    public class Calculator
     {
         public int? DoOperation(bool suma, bool resta, bool multiplica, int? givenNUmber1 = null, int? givenNumber2 = null)
         {
