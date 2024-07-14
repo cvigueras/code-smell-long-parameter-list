@@ -16,7 +16,11 @@
             {
                 return givenNUmber1 - givenNumber2;
             }
-            return givenNUmber1 * givenNumber2;
+            if (multiplica)
+            {
+                return givenNUmber1 * givenNumber2;
+            }
+            return givenNUmber1 / givenNumber2;
         }
     }
 }
