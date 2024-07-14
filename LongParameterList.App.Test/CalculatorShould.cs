@@ -26,7 +26,7 @@ namespace LongParameterList.App.Test
             var givenNumber2 = 20;
             var calculator = new Calculator();
 
-            var result = calculator.DoOperation(false, true, false, givenNUmber1, givenNumber2);
+            var result = calculator.Subtract(givenNUmber1, givenNumber2);
 
             Assert.IsTrue(result == givenNUmber1 - givenNumber2);
         }
