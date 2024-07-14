@@ -56,12 +56,23 @@ namespace LongParameterList.App.Test
         }
 
         [Test]
-        public void GetZeroWhenFirstParameterIsNull()
+        public void GetZeroWhenFirstNumberParameterIsNull()
         {
             var givenNumber2 = 25;
             var calculator = new Calculator();
 
             var result = calculator.DoOperation(false, false, false, null, givenNumber2);
+
+            Assert.IsTrue(result == 0);
+        }
+
+        [Test]
+        public void GetZeroWhenSecondNumberParameterIsNull()
+        {
+            var givenNumber2 = 25;
+            var calculator = new Calculator();
+
+            var result = calculator.DoOperation(false, false, false, givenNumber2);
 
             Assert.IsTrue(result == 0);
         }
