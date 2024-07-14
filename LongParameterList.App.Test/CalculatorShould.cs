@@ -30,5 +30,17 @@ namespace LongParameterList.App.Test
 
             Assert.IsTrue(result == givenNUmber1 - givenNumber2);
         }
+
+        [Test]
+        public void DoMultiplySuccessfully()
+        {
+            var givenNUmber1 = 25;
+            var givenNumber2 = 20;
+            var calculator = new Calculator();
+
+            var result = calculator.DoOperation(givenNUmber1, givenNumber2, false);
+
+            Assert.IsTrue(result == givenNUmber1 * givenNumber2);
+        }
     }
 }
