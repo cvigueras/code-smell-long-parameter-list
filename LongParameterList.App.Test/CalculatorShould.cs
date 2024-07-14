@@ -14,7 +14,7 @@ namespace LongParameterList.App.Test
             var givenNumber2 = 25;
             var calculator = new Calculator();
 
-            var result = calculator.DoOperation(givenNUmber1,givenNumber2, true, false, false);
+            var result = calculator.DoOperation(true, false, false, givenNUmber1, givenNumber2);
 
             Assert.IsTrue(result == givenNUmber1 + givenNumber2);
         }
@@ -26,7 +26,7 @@ namespace LongParameterList.App.Test
             var givenNumber2 = 20;
             var calculator = new Calculator();
 
-            var result = calculator.DoOperation(givenNUmber1, givenNumber2, false, true, false);
+            var result = calculator.DoOperation(false, true, false, givenNUmber1, givenNumber2);
 
             Assert.IsTrue(result == givenNUmber1 - givenNumber2);
         }
@@ -38,7 +38,7 @@ namespace LongParameterList.App.Test
             var givenNumber2 = 20;
             var calculator = new Calculator();
 
-            var result = calculator.DoOperation(givenNUmber1, givenNumber2, false, false, true);
+            var result = calculator.DoOperation(false, false, true, givenNUmber1, givenNumber2);
 
             Assert.IsTrue(result == givenNUmber1 * givenNumber2);
         }
@@ -50,9 +50,20 @@ namespace LongParameterList.App.Test
             var givenNumber2 = 25;
             var calculator = new Calculator();
 
-            var result = calculator.DoOperation(givenNUmber1, givenNumber2, false, false, false);
+            var result = calculator.DoOperation(false, false, false, givenNUmber1, givenNumber2);
 
             Assert.IsTrue(result == givenNUmber1 / givenNumber2);
+        }
+
+        [Test]
+        public void GetZeroWhenFirstParameterIsNull()
+        {
+            var givenNumber2 = 25;
+            var calculator = new Calculator();
+
+            var result = calculator.DoOperation(false, false, false, null, givenNumber2);
+
+            Assert.IsTrue(result == 0);
         }
     }
 }
