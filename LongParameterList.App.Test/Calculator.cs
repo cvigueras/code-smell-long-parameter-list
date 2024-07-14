@@ -6,9 +6,13 @@
         {
         }
 
-        public int DoOperation(int givenNUmber1, int givenNumber2)
+        public int DoOperation(int givenNUmber1, int givenNumber2, bool suma)
         {
-            return givenNUmber1 + givenNumber2;
+            if (suma)
+            {
+                return givenNUmber1 + givenNumber2;
+            }
+            return givenNUmber1 - givenNumber2;
         }
     }
 }

@@ -14,7 +14,7 @@ namespace LongParameterList.App.Test
             var givenNumber2 = 25;
             var calculator = new Calculator();
 
-            var result = calculator.DoOperation(givenNUmber1,givenNumber2);
+            var result = calculator.DoOperation(givenNUmber1,givenNumber2, true);
 
             Assert.IsTrue(result == givenNUmber1 + givenNumber2);
         }
@@ -26,7 +26,7 @@ namespace LongParameterList.App.Test
             var givenNumber2 = 20;
             var calculator = new Calculator();
 
-            var result = calculator.DoOperation(givenNUmber1, givenNumber2);
+            var result = calculator.DoOperation(givenNUmber1, givenNumber2, false);
 
             Assert.IsTrue(result == givenNUmber1 - givenNumber2);
         }
