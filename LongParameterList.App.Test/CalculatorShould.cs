@@ -2,11 +2,6 @@ namespace LongParameterList.App.Test
 {
     public class CalculatorShould
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public void DoSumSuccessfully()
         {
